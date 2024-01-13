@@ -18,7 +18,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         chunkAmount = chunkList.Count;
-        Instantiate(playerPrefab, new Vector3((width - 1) * chunkSize / 2, 4, (height - 1) * chunkSize / 2), Quaternion.identity);
+        //dla latarki potrzebowałam mieć prefab gracza w scenie, więc dodałam ręcznie na te pozycje startowa
+        //Instantiate(playerPrefab, new Vector3((width - 1) * chunkSize / 2, 4, (height - 1) * chunkSize / 2), Quaternion.identity);
         // CreateMaze();
     }
 
