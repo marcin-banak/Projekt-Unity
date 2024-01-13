@@ -39,7 +39,7 @@ public class FlashlightAdvanced : MonoBehaviour
 
         if (Input.GetButtonDown("flashlight") && off)
         {
-            //flashON.Play();
+            flashON.Play();
             light1.enabled = true;
             on = true;
             off = false;
