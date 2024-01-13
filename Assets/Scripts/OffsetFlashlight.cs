@@ -15,9 +15,6 @@ public class OffsetFlashlight : MonoBehaviour
         vectOffset = transform.position - goFollow.transform.position;
     }
 
-
-
-
     void Update()
     {
         transform.position = goFollow.transform.position + vectOffset;
