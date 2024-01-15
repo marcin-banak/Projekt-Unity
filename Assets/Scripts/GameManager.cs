@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour
     }
 
     void Update() {
-        Debug.Log(enemyFOV.canSeePlayer);
         if (enemyFOV.canSeePlayer) {
             enemyMotion.followTime = 7f;
         }

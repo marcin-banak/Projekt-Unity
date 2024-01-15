@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour {
     void Start() {
         agent = GetComponent<NavMeshAgent>();
         followTime = 0;
-        // SetRandomDestination();
+        SetRandomDestination();
     }
 
     void Update() {
