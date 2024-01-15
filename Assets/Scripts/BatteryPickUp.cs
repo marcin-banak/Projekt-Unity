@@ -20,24 +20,30 @@ public class BatteryPickUp : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        /*if (other.gameObject.tag == "Reach")
         {
             Debug.Log("on");
             inReach = true;
             pickUpText.SetActive(true);
-        }
+        }*/
+        Debug.Log("on");
+        inReach = true;
+        pickUpText.SetActive(true);
+
 
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        /*if (other.gameObject.tag == "Reach")
         {
             Debug.Log("off");
-
             inReach = false;
             pickUpText.SetActive(false);
-        }
+        }*/
+        Debug.Log("off");
+        inReach = false;
+        pickUpText.SetActive(false);
     }
 
 
